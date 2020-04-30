@@ -104,20 +104,33 @@ validatePassword = function validatePassword(password, email, blogTitle) {
             'abcdefghij',
             '0987654321',
             '1q2w3e4r5t',
-            '12345asdfg'
+            '12345asdfg',
+	 /* LLIUREX 21/04/2020.Change length from 10 characters to 6 */
+	   '123456',
+            'qwerty',
+            'qwertz',
+            'asdfgh',
+            'abcdef',
+            '098765',
+            '1q2w3e',
+            '123asd'
+         /*LLIUREX 21/04/2020 */
+		
         ];
 
     blogTitle = blogTitle ? blogTitle : settingsCache.get('title');
     blogUrl = blogUrl.replace(/^http(s?):\/\//, '');
 
     // password must be longer than 10 characters
-    if (!validator.isLength(password, 10)) {
+   /* LLIUREX 21/04/2020.Change length from 10 characters to 6 */
+    if (!validator.isLength(password, 6)) {
         validationResult.isValid = false;
         validationResult.message = common.i18n.t('errors.models.user.passwordDoesNotComplyLength', {minLength: 10});
 
         return validationResult;
     }
-
+ /* LLIUREX 21/04/2020 */
+	
     // dissallow password from badPasswords list (e. g. '1234567890')
     _.each(badPasswords, function (badPassword) {
         if (badPassword === password) {
