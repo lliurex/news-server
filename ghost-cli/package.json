@@ -1,0 +1,143 @@
+{
+  "_from": "ghost-cli@latest",
+  "_id": "ghost-cli@1.13.1",
+  "_inBundle": false,
+  "_integrity": "sha512-7mEQEBVVOKX7jdz+wRuKfI8YMY+Jhp1MoI4L0+7u4HkLgKYYl2VeJ02/BlkLNEKA2jhTW5Qkd2ICWUt5fCCk3A==",
+  "_location": "/ghost-cli",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ghost-cli@latest",
+    "name": "ghost-cli",
+    "escapedName": "ghost-cli",
+    "rawSpec": "latest",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/ghost-cli/-/ghost-cli-1.13.1.tgz",
+  "_shasum": "5de99f2a3446e7dfc5391afa8acdf10cd47b9916",
+  "_spec": "ghost-cli@latest",
+  "_where": "/home/lliurex",
+  "author": {
+    "name": "Ghost Foundation"
+  },
+  "bin": {
+    "ghost": "bin/ghost"
+  },
+  "bugs": {
+    "url": "https://github.com/TryGhost/Ghost-CLI/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": "https://github.com/TryGhost/Ghost-CLI/graphs/contributors",
+  "dependencies": {
+    "abbrev": "1.1.1",
+    "adm-zip": "0.4.13",
+    "bluebird": "3.7.1",
+    "chalk": "2.4.2",
+    "cli-table3": "0.5.0",
+    "debug": "4.1.1",
+    "decompress": "4.2.0",
+    "download": "7.1.0",
+    "execa": "1.0.0",
+    "find-plugins": "1.1.7",
+    "fkill": "6.2.0",
+    "form-data": "2.5.1",
+    "fs-extra": "8.1.0",
+    "generate-password": "1.4.2",
+    "global-modules": "2.0.0",
+    "got": "9.6.0",
+    "https-proxy-agent": "3.0.1",
+    "inquirer": "7.0.0",
+    "is-running": "2.1.0",
+    "latest-version": "5.1.0",
+    "listr": "0.14.3",
+    "lodash": "4.17.15",
+    "log-symbols": "3.0.0",
+    "moment": "2.24.0",
+    "mysql": "2.17.1",
+    "ora": "3.4.0",
+    "package-json": "6.5.0",
+    "path-is-root": "0.1.0",
+    "portfinder": "1.0.25",
+    "prettyjson": "1.2.1",
+    "proxy-from-env": "1.0.0",
+    "read-last-lines": "1.7.1",
+    "replace-in-file": "4.2.0",
+    "rxjs": "6.5.3",
+    "semver": "6.3.0",
+    "shasum": "1.0.2",
+    "stat-mode": "0.3.0",
+    "strip-ansi": "5.2.0",
+    "symlink-or-copy": "1.2.0",
+    "systeminformation": "4.14.17",
+    "tail": "2.0.3",
+    "tough-cookie": "3.0.1",
+    "validator": "7.2.0",
+    "yargs": "14.2.0",
+    "yarn": "1.19.1"
+  },
+  "deprecated": false,
+  "description": "CLI Tool for installing & updating Ghost",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "coveralls": "3.0.7",
+    "eslint": "6.6.0",
+    "eslint-plugin-ghost": "0.6.0",
+    "has-ansi": "4.0.0",
+    "mocha": "6.2.2",
+    "nock": "11.7.0",
+    "nyc": "14.1.1",
+    "proxyquire": "2.1.3",
+    "sinon": "7.5.0",
+    "standard-version": "4.3.0",
+    "tmp": "0.1.0"
+  },
+  "engines": {
+    "node": "^8.16.0 || ^10.13.0 || ^12.10.0"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "extensions",
+    "yarn.lock"
+  ],
+  "homepage": "https://ghost.org",
+  "keywords": [
+    "ghost",
+    "cli"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "ghost-cli",
+  "nyc": {
+    "exclude": [
+      "**/*-spec.js",
+      "test"
+    ]
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TryGhost/Ghost-CLI.git"
+  },
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint bin/* lib test extensions",
+    "posttest": "yarn lint",
+    "ship": "f() { STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then standard-version $@ && git push --follow-tags;  fi; }; f",
+    "test": "yarn test:all",
+    "test:acceptance": "mocha --timeout 10000 test/acceptance/**/*-spec.js",
+    "test:all": "yarn test:unit && yarn test:acceptance",
+    "test:unit": "nyc --reporter=html --reporter=text mocha --recursive test/unit extensions/**/test"
+  },
+  "standard-version": {
+    "skip": {
+      "tag": true
+    }
+  },
+  "version": "1.13.1"
+}
