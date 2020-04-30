@@ -154,9 +154,11 @@ module.exports = {
         permissions: false,
         query(frame) {
             return Promise.resolve()
+		/* LLIUREX 21/04/2020 Changes to enable user's creation form ghost
                 .then(() => {
                     return auth.setup.assertSetupCompleted(true)();
                 })
+		LLIUREX 21/04/2020 */
                 .then(() => {
                     return invitations.accept(frame.data);
                 });

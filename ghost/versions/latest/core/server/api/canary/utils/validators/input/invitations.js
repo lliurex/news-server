@@ -8,11 +8,13 @@ module.exports = {
         debug('acceptInvitation');
 
         const data = frame.data.invitation[0];
-
+	
+	/* LLIUREX 21/04/2020 Changes to enable user's creation from ghost    
         if (!data.token) {
             return Promise.reject(new common.errors.ValidationError({message: common.i18n.t('errors.api.authentication.noTokenProvided')}));
         }
-
+        LLIUREX 21/04/2020 */
+	    
         if (!data.email) {
             return Promise.reject(new common.errors.ValidationError({message: common.i18n.t('errors.api.authentication.noEmailProvided')}));
         }
