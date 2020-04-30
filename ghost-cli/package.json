@@ -78,7 +78,7 @@
     "tough-cookie": "3.0.1",
     "validator": "7.2.0",
     "yargs": "14.2.0",
-    "yarn": "1.19.1"
+    "yarn": "1.22.0"
   },
   "deprecated": false,
   "description": "CLI Tool for installing & updating Ghost",
