@@ -12,7 +12,7 @@ async function accept(invitation) {
     /* LLLIUREX 21/04/2020 Changes to enable user's creation from ghost 	
     let invite = await models.Invite.findOne({token: inviteToken, status: 'sent'}, options);
     */
-   let invite = await models.Invite.findOne({emal: data.email, status: 'pending'}, options);
+   let invite = await models.Invite.findOne({email: data.email, status: 'pending'}, options);
    /* 
    if (!invite) {
         throw new common.errors.NotFoundError({message: common.i18n.t('errors.api.invites.inviteNotFound')});
