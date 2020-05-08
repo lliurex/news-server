@@ -77,23 +77,30 @@ const minimalRequiredSetupToStartGhost = (dbState) => {
     const settings = require('./services/settings');
     const models = require('./models');
     const GhostServer = require('./ghost-server');
+   //LLIUREX. Change order of initialization to get default_locale
+    const settingsCache = require('./services/settings/cache');
 
     // Frontend
     const frontendSettings = require('../frontend/services/settings');
 
     let ghostServer;
 
-    // Initialize Ghost core internationalization
+ // Initialize Ghost core internationalization
+    /*LLIUREX. Change order of initialization to get default_locale
     common.i18n.init();
     debug('Default i18n done for core');
-
+    LLIUREX */
+    
     models.init();
     debug('Models done');
 
     return settings.init()
         .then(() => {
             debug('Settings done');
-
+             //LLIUREX. Change order of initialization to get default_locale
+            let def_locale=settingsCache.get('default_locale');
+            common.i18n.init(def_locale);
+            debug('Default i18n done for core');
             return frontendSettings.init();
         })
         .then(() => {

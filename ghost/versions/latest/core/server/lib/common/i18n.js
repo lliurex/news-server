@@ -66,12 +66,21 @@ class I18n {
      * Setup i18n support:
      *  - Load proper language file into memory
      */
-    init() {
+    // LLIUREX. Used default_locale from setting to init locale 
+    init(def_locale) {
         // This function is called during Ghost's initialization.
         // Reading translation file for messages from core .json files and keeping its content in memory
         // The English file is always loaded, until back-end translations are enabled in future versions.
+        //LLIUREX. Used default_locale from setting to init locale 
+        this._locale=def_locale;
+
         try {
+           /*LLIUREX. Used default_locale from setting to init locale 
+
             this._strings = this._readStringsFile(__dirname, '..', '..', 'translations', `${this.defaultLocale()}.json`);
+            LLIUREX */
+            this._strings = this._readStringsFile(__dirname, '..', '..', 'translations', `${this.locale()}.json`);
+
         } catch (err) {
             this._strings = null;
             throw err;
