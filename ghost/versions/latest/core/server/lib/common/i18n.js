@@ -82,8 +82,16 @@ class I18n {
             this._strings = this._readStringsFile(__dirname, '..', '..', 'translations', `${this.locale()}.json`);
 
         } catch (err) {
-            this._strings = null;
-            throw err;
+           /*LLIUREX. Used default_locale from setting to init locale */
+
+        	try {
+        		this._strings = this._readStringsFile(__dirname, '..', '..', 'translations', `${this.defaultLocale()}.json`);
+
+        	}catch(err){
+        		 this._strings = null;
+            	throw err;
+        	}
+           
         }
 
         this._initializeIntl();
