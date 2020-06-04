@@ -21,7 +21,7 @@
                 "help": "Comproveu la vostra implementació per a config.js o config.example.js."
             },
             "couldNotOpenForReading": {
-                "error": "No s'ha pogut obrir {fitxer} per a llegir-lo.",
+                "error": "No s'ha pogut obrir {file} per a llegir-lo.",
                 "help": "Comproveu la vostra implementació per a config.js o config.example.js."
             },
             "couldNotOpenForWriting": {
@@ -34,9 +34,9 @@
                 "help": "Assegureu-vos que es tracte d'un URL vàlid abans de reiniciar"
             },
             "urlCannotContainGhostSubdir": {
-                "error": "no es permet un subdirectori ghost",
+                "error": "no es permet un subdirectori news",
                 "help": "Canvieu el nom del subdirectori abans de reiniciar",
-                "description": "El vostre URL del lloc en config.js no pot contindre un subdirector anomenat ghost."
+                "description": "El vostre URL del lloc en config.js no pot contindre un subdirector anomenat news."
             },
             "invalidServerValues": {
                 "error": "la configuració del servidor no és vàlida",
@@ -84,14 +84,14 @@
                 "tokenRevocationFailed": "La revocació del testimoni ha fallat",
                 "setupUnableToRun": "A la base de dades falten les dades de l'equip. Restabliu la base de dades i torneu-ho a provar.",
                 "setupMustBeCompleted": "La configuració s'ha de completar abans de realitzar aquesta sol·licitud.",
-                "noEmailProvided": "No s’ha proporcionat cap correu electrònic.",
+                "noEmailProvided": "No s'ha proporcionat cap correu electrònic.",
                 "noPasswordProvided": "No s'ha proporcionat cap contrasenya.",
                 "invalidEmailReceived": "El servidor no ha rebut cap correu electrònic vàlid",
                 "setupAlreadyCompleted": "La configuració ja s'ha completat.",
                 "checkEmailConfigInstructions": "Consulteu {url} per a obtindre instruccions quant a la configuració del correu electrònic.",
                 "notLoggedIn": "No heu iniciat la sessió.",
                 "notTheBlogOwner": "No sou el propietari del lloc.",
-                "invalidTokenTypeHint": "S'ha proporcionat un token_type_hint no vàlid.",
+                "invalidTokenTypeHint": "S'ha proporcionat un suggeriment_tipus_testimoni (token_type_hint) no vàlid.",
                 "invalidTokenProvided": "S'ha proporcionat un testimoni no vàlid"
             },
             "db": {
@@ -121,22 +121,22 @@
                     "help": "En el seu lloc, activeu el tema mitjançant l'API de temes"
                 },
                 "tryUpdatingLabs": "Intenteu actualitzar un paràmetre en la pàgina de Laboratoris, o editeu manualment la vostra base de dades",
-                "problemFindingSetting": "S'ha produït un problema en busca la configuració: {key}",
+                "problemFindingSetting": "S'ha produït un problema a la cerca de la configuració: {key}",
                 "accessCoreSettingFromExtReq": "S'ha intentat accedir a la configuració del nucli des d'una sol·licitud externa",
                 "invalidJsonInLabs": "S'ha produït un error: JSON no és vàlid en settings.labs",
-                "labsColumnCouldNotBeParsed": "La columna amb la clau \"labs\" no es pot analitzar com a JSON",
+                "labsColumnCouldNotBeParsed": "La columna amb la clau «labs» no es pot analitzar com a JSON",
                 "noPermissionToEditSettings": "No teniu permís per a editar la configuració.",
                 "noPermissionToReadSettings": "No teniu permís per a llegir la configuració."
             },
             "members": {
                 "memberNotFound": "No s'ha trobat cap membre.",
-                "memberAlreadyExists": "L’adreça de correu electrònic ja és membre."
+                "memberAlreadyExists": "L'adreça de correu electrònic ja és membre."
             },
             "labels": {
                 "labelNotFound": "No s'ha trobat cap camp."
             },
             "tags": {
-                "tagNotFound": "No s'ha trobat cap marcador."
+                "tagNotFound": "No s'ha trobat cap etiqueta."
             },
             "themes": {
                 "overrideCasper": "Canvieu el nom del vostre zip; no es pot sobreescriure el tema per defecte del casper.",
@@ -180,16 +180,16 @@
             },
             "icons": {
                 "missingFile": "Seleccioneu una icona.",
-                "couldNotGetSize": "No s'ha pogut obtindre les dimension de la icona",
+                "couldNotGetSize": "No s'ha pogut obtindre les dimensions de la icona",
                 "invalidFile": "La icona ha de ser un fitxer .ico o .png quadrat entre 60px - 1.000px, de menys de 100kb."
             },
             "users": {
-                "userNotFound": "No s'ha torbat l'usuari.",
+                "userNotFound": "No s'ha trobat l'usuari.",
                 "cannotChangeOwnRole": "No podeu canviar el vostre propi rol.",
                 "cannotChangeStatus": "No podeu canviar el vostre propi estat.",
                 "cannotChangeOwnersRole": "No es pot canviar el rol del propietari",
                 "noPermissionToAddUser": "No teniu permís per a afegir aquest usuari",
-                "noEmailProvided": "No s’ha proporcionat cap correu electrònic.",
+                "noEmailProvided": "No s'ha proporcionat cap correu electrònic.",
                 "userAlreadyRegistered": "L'usuari ja s'ha registrat.",
                 "noPermissionToDestroyUser": "No teniu permís per a eliminar aquest usuari.",
                 "noPermissionToEditUser": "No teniu permís per a editar aquest usuari",
@@ -219,7 +219,7 @@
                 "unknownSlugType": "Tipus d'identificador d'URL desconegut «{type}»."
             },
             "webhooks": {
-                "webhookAlreadyExists": "L'URL de destinació ja ha estat sent utilitzada per a aquest esdeveniment."
+                "webhookAlreadyExists": "L'URL de destinació ja ha estat sent utilitzat per a aquest esdeveniment."
             }
         },
         "general": {
@@ -231,8 +231,8 @@
         },
         "httpServer": {
             "addressInUse": {
-                "help": "Ja s'està executant una altra instància de Ghost?",
-                "error": "(EADDRINUSE) No es pot iniciar Ghost.",
+                "help": "Ja s'està executant una altra instància de News?",
+                "error": "(EADDRINUSE) No es pot iniciar News.",
                 "context": "Un altre programa ja utilitza el port {port}."
             },
             "otherError": {
@@ -247,11 +247,11 @@
                 "expectedPublishedAtInFuture": "La data ha de ser, com a mínim, {cannotScheduleAPostBeforeInMinutes} minuts posterior.",
                 "postNotFound": "No s'ha trobat l'entrada.",
                 "untitled": "(Sense títol)",
-                "isAlreadyPublished": "L'entrada ja està publicada. Torneu a carragar la vostra pàgina.",
+                "isAlreadyPublished": "L'entrada ja està publicada. Torneu a carregar la vostra pàgina.",
                 "noUserFound": "No s'ha trobat cap usuari",
                 "notEnoughPermission": "No teniu permís per a realitzar aquesta acció",
                 "tagUpdates": {
-                    "error": "No es poden guardar els marcadors.",
+                    "error": "No es poden guardar les etiquetes.",
                     "help": "L'entrada s'ha guardat, però no s'han actualitzat les etiquetes."
                 }
             },
@@ -266,16 +266,16 @@
                 "userUpdateError": {
                     "context": "S'ha produït un error generat per l'actualització de l'usuari durant la sessió",
                     "emailIsAlreadyInUse": "Aquest correu electrònic ja s'està utilitzant",
-                    "help": "Visiteu i guardeu el perfil després d’iniciar la sessió per a comprovar si hi ha problemes."
+                    "help": "Visiteu i guardeu el perfil després d'iniciar la sessió per a comprovar si hi ha problemes."
                 },
                 "accountLocked": "El vostre compte està bloquejat. Restabliu la vostra contrasenya per a iniciar la sessió fent clic a l'enllaç «Contrasenya oblidada?»",
                 "onlyOwnerCanTransferOwnerRole": "Només els propietaris poden transferir el rol de propietari.",
                 "missingContext": "sense context",
-                "onlyOneRolePerUserSupported": "Actualment només s’admet un rol per usuari.",
+                "onlyOneRolePerUserSupported": "Actualment només s'admet un rol per usuari.",
                 "passwordDoesNotComplySecurity": "No podeu utilitzar una contrasenya insegura.",
                 "notEnoughPermission": "No teniu permís per a realitzar aquesta acció",
                 "noUserWithEnteredEmailAddr": "No hi ha cap usuari amb aquesta adreça de correu electrònic.",
-                "userIsInactive": "L’usuari amb aquesta adreça de correu electrònic no està actiu.",
+                "userIsInactive": "L'usuari amb aquesta adreça de correu electrònic no està actiu.",
                 "incorrectPassword": "La vostra contrasenya és incorrecta.",
                 "accountSuspended": "El vostre conté s'ha suspés.",
                 "newPasswordsDoNotMatch": "Les contrasenyes noves no coincideixen",
@@ -319,7 +319,7 @@
                     "noUserFound": "No s'ha trobat cap usuari",
                     "tokenNotFound": "No s'ha trobat cap testimoni"
                 },
-                "invalidDate": "El format de la data per a «{clau}» no és vàlid."
+                "invalidDate": "El format de la data per a «{key}» no és vàlid."
             }
         },
         "errors": {
@@ -336,11 +336,11 @@
             "unknownError": "Error desconegut",
             "notEnoughPermission": "No teniu permís per a realitzar aquesta acció",
             "errorWhilstRenderingError": "S'ha produït un error en renderitzar la pàgina d'error",
-            "errorTemplateHasError": "La plantilla d’error té un error",
-            "oopsErrorTemplateHasError": "Sembla que hi ha un error a la plantilla d’error.",
+            "errorTemplateHasError": "La plantilla d'error té un error",
+            "oopsErrorTemplateHasError": "Sembla que hi ha un error a la plantilla d'error.",
             "encounteredError": "S'ha trobat l'error: ",
             "renderingErrorPage": "Pàgina d'error de renderització",
-            "caughtProcessingError": "Ghost va capturar un error de processament en la capa del programari intermediari.",
+            "caughtProcessingError": "News ha capturat un error de processament en la capa del programari intermediari.",
             "imageNotFound": "No s'ha trobat cap imatge",
             "imageNotFoundWithRef": "No s'ha trobat cap imatge: {img}",
             "pageNotFound": "No s'ha trobat la pàgina",
@@ -352,7 +352,7 @@
                 "unknownOrigin": "No s'ha pogut determinar l'origen de la sol·licitud. Assegureu-vos que hi ha una capçalera d'origen o de referència.",
                 "missingContentMemberOrIntegration": "No es pot determinar el membre o la integració autenticats. Comproveu la clau de l'API de contingut que s'ofereix i assegureu-vos que es transferisquen les galetes si falla l'autenticació del membre.",
                 "adminApiKidMissing": "Kid (identificador de clau) de l'API de l'administrador desconegut.",
-                "incorrectAuthHeaderFormat": "El format de capçalera d'autorització és «Authorization: Ghost [token]»",
+                "incorrectAuthHeaderFormat": "El format de capçalera d'autorització és «Autorització: News [testimoni]»",
                 "clientCredentialsNotProvided": "No s'han proporcionat les credencials de client",
                 "clientCredentialsNotValid": "Les credencials del client no són vàlides",
                 "forInformationRead": "Per a obtindre informació sobre com solucionar-ho, llegiu {url}.",
@@ -407,7 +407,7 @@
         },
         "permissions": {
             "noActionsMapFound": {
-                "error": "No s’ha trobat cap mapa d’accions, assegureu-vos que heu carregat els permisos a la base de dades i, a continuació, truqueu permissions.init () abans de l’ús."
+                "error": "No s'ha trobat cap mapa d'accions, assegureu-vos que heu carregat els permisos a la base de dades i, a continuació, truqueu permissions.init () abans de l'ús."
             },
             "applyStatusRules": {
                 "error": "No teniu permís per recuperar {docName} amb aquest estat"
@@ -417,7 +417,7 @@
         "data": {
             "import": {
                 "utils": {
-                    "dataLinkedToUnknownUser": "S’està intentant importar les dades enllaçades a un identificador d’usuari desconegut {userToMap}"
+                    "dataLinkedToUnknownUser": "S'està intentant importar les dades enllaçades a un identificador d'usuari desconegut {userToMap}"
                 },
                 "index": {
                     "duplicateEntryFound": "S'ha trobat una entrada duplicada. S'han trobat diversos valors de «{value}» per a {offendingProperty}."
@@ -431,7 +431,7 @@
                     "unsupportedRoonExport": "El fitxer zip pareix una exportació de Roon amb un format antic. Torneu a exportar el vostre blog de Roon i torneu-ho a provar.",
                     "couldNotCleanUpFile": {
                         "error": "La importació no ha pogut netejar el fitxer ",
-                        "context": "El vostre lloc continuarà funcionant tal com s’espera"
+                        "context": "El vostre lloc continuarà funcionant tal com s'espera"
                     },
                     "noContentToImport": "El fitxer zip no incloïa cap contingut per a importar.",
                     "invalidZipStructure": "L'estructura del fitxer zip no és vàlida.",
@@ -442,7 +442,7 @@
                     "json": {
                         "failedToParseImportJson": "No s'ha pogut analitzar el fitxer JSON d'importació.",
                         "invalidJsonFormat": "El format JSON no és vàlid; s'esperava «{db: [exportedData]}»",
-                        "checkImportJsonIsValid": "comproveu que el fitxer d’importació siga un JSON vàlid.",
+                        "checkImportJsonIsValid": "comproveu que el fitxer d'importació siga un JSON vàlid.",
                         "apiDbImportContent": "Contingut de la importació de la Base de dades de l'API"
                     }
                 }
@@ -498,7 +498,7 @@
             "noMailServerAtAddress": {
                 "error": " No s'ha trobat cap servidor de correu a {domain}."
             },
-            "reason": " Motiu: {motiu}."
+            "reason": " Motiu: {reason}."
         },
         "updateCheck": {
             "checkingForUpdatesFailed": {
@@ -512,7 +512,7 @@
     },
     "common": {
         "mail": {
-            "title": "Ghost en {domain}"
+            "title": "News en {domain}"
         },
         "seeLinkForInstructions": "Consulteu {link} per obtindre més instruccions.",
         "api": {
@@ -522,12 +522,12 @@
                     "resetPassword": "Restableix la contrasenya",
                     "passwordChanged": "S'ha canviat la contrasenya correctament.",
                     "invitationAccepted": "S'ha acceptat la invitació.",
-                    "yourNewGhostBlog": "El vostre Lloc Ghost nou"
+                    "yourNewGhostBlog": "El vostre lloc News nou"
                 },
                 "sampleBlogDescription": "Reflexions, històries i idees."
             },
             "mail": {
-                "testGhostEmail": "Prova el correu electrònic de Ghost"
+                "testGhostEmail": "Prova el correu electrònic de News"
             },
             "users": {
                 "mail": {
@@ -573,13 +573,14 @@
             },
             "navigation": {
                 "invalidData": "les dades de navegació no són un objecte o són una funció",
-                "valuesMustBeDefined": "Tots els valors s’han de definir per a l’etiqueta, l’URL i l’actual",
-                "valuesMustBeString": "El valor no és vàlid; l’URL i l’etiqueta han de ser cadenes"
+                "valuesMustBeDefined": "Tots els valors s'han de definir per al camp, l'URL i l'actual",
+                "valuesMustBeString": "El valor no és vàlid; l'URL i el camp han de ser cadenes"
             },
             "pagination": {
                 "invalidData": "L'aplicació d'ajuda \\{\\{pagination\\}\\} s'ha utilitzat fora del context de paginació.Vegeu https://ghost.org/docs/api/handlebars-themes/helpers/pagination/.",
-                "valuesMustBeDefined": "Tots els valors s’han de definir per pàgina, pàgines, límit i total",
-                "nextPrevValuesMustBeNumeric": "El valor no és vàlid; següent/anterior han de ser un número"
+                "valuesMustBeDefined": "Tots els valors s'han de definir per pàgina, pàgines, límit i total",
+                "nextPrevValuesMustBeNumeric": "El valor no és vàlid; següent/anterior han de ser un número",
+                "valuesMustBeNumeric": "El valor no vàlid, la pàgina de verificació, les pàgines, el límit i el total són nombres"
             },
             "plural": {
                 "valuesMustBeDefined": "Tots els valors s'han de definir per a buit, singulars i plurals"
@@ -596,35 +597,36 @@
                 "invalidAttribute": "No és vàlid o no s'ha proporcionat un atribut per a tindre ajuda"
             },
             "link": {
-                "hrefIsRequired": "L'aplicació d'ajuda \\{\\{#link\\}\\}\\{\\{/link\\}\\} requereix un href=\"\" attribute."
+                "hrefIsRequired": "L'aplicació d'ajuda \\{\\{#link\\}\\}\\{\\{/link\\}\\} requereix un href=\"\" atribut."
             },
             "link_class": {
-                "forIsRequired": "L'aplicació d'ajuda \\{\\{link_class\\}\\} requereix un for=\"\" attribute."
+                "forIsRequired": "L'aplicació d'ajuda \\{\\{link_class\\}\\} requereix un for=\"\" atribut."
             },
             "page_url": {
-                "isDeprecated": "Avís : pageUrl està obsolet; en el seu lloc utilitzeu page_url\nL'aplicació d'ajuda pageUrl s'ha substituït per page_url en Ghost 0.4.2, i s'eliminarà completament en Ghost 0.6\nAl fitxer de paginació .hbs del vostre tema, pageUrl ha de canviar el nom per page_url"
+                "isDeprecated": "Avís : pageUrl està obsolet; en el seu lloc utilitzeu page_url\nL'aplicació d'ajuda pageUrl s'ha substituït per page_url en News 0.4.2, i s'eliminarà completament en News 0.6\nAl fitxer de paginació .hbs del vostre tema, pageUrl ha de canviar el nom per page_url"
             }
         },
         "index": {
-            "usingDirectMethodToSendEmail": "Ghost intenta utilitzar un mètode directe per a enviar correu electrònic. \nEs recomana que configureu explícitament un servei de correu electrònic.",
-            "unableToSendEmail": "Actualment, Ghost no pot enviar correu electrònic."
+            "usingDirectMethodToSendEmail": "News intenta utilitzar un mètode directe per a enviar correu electrònic. \nEs recomana que configureu explícitament un servei de correu electrònic.",
+            "unableToSendEmail": "Actualment, News no pot enviar correu electrònic."
         }
     },
     "notices": {
         "httpServer": {
-            "ghostIsRunning": "Ghost s'està executant…",
+            "ghostIsRunning": "News s'està executant…",
             "cantTouchThis": "No podeu tocar això",
             "yourBlogIsAvailableOn": "El vostre lloc ja està disponible a {url}",
             "ctrlCToShutDown": "Ctrl+C per a apagar",
             "listeningOn": "S'està escoltant: {host}:{port}",
             "urlConfiguredAs": "L'URL s'ha configurat com a: {url}",
             "yourBlogIsNowOffline": "El vostre lloc està ara fora de línia",
-            "ghostIsClosingConnections": "Ghost està tancant connexions",
-            "ghostHasShutdown": "Ghost s'ha apagat",
-            "ghostIsRunningIn": "Ghost s'està executant en {env}..."
+            "ghostIsClosingConnections": "News està tancant connexions",
+            "ghostHasShutdown": "News s'ha apagat",
+            "ghostIsRunningIn": "News s'està executant en {env}...",
+            "ghostWasRunningFor": "News estava funcionant per"
         },
         "index": {
-            "welcomeToGhost": "Us donem la benvinguda a Ghost."
+            "welcomeToGhost": "Us donem la benvinguda a News."
         },
         "api": {
             "users": {
@@ -633,7 +635,7 @@
         },
         "data": {
             "fixtures": {
-                "jQueryRemoved": "jQuery s'ha eliminat del nucli Ghost i ara s'està carregant des del CDN de la Fundació jQuery."
+                "jQueryRemoved": "jQuery s'ha eliminat del nucli News i ara s'està carregant des del CDN de la Fundació jQuery."
             },
             "utils": {
                 "index": {
