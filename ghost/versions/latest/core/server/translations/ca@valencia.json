@@ -319,7 +319,7 @@
                     "noUserFound": "No s'ha trobat cap usuari",
                     "tokenNotFound": "No s'ha trobat cap testimoni"
                 },
-                "invalidDate": "El format de la data per a «{key}» no és vàlid."
+                "invalidDate": "El format de la data per a `{key}` no és vàlid."
             }
         },
         "errors": {
@@ -352,7 +352,7 @@
                 "unknownOrigin": "No s'ha pogut determinar l'origen de la sol·licitud. Assegureu-vos que hi ha una capçalera d'origen o de referència.",
                 "missingContentMemberOrIntegration": "No es pot determinar el membre o la integració autenticats. Comproveu la clau de l'API de contingut que s'ofereix i assegureu-vos que es transferisquen les galetes si falla l'autenticació del membre.",
                 "adminApiKidMissing": "Kid (identificador de clau) de l'API de l'administrador desconegut.",
-                "incorrectAuthHeaderFormat": "El format de capçalera d'autorització és «Autorització: News [testimoni]»",
+                "incorrectAuthHeaderFormat": "El format de capçalera d'autorització és «Autorització: News [token]»",
                 "clientCredentialsNotProvided": "No s'han proporcionat les credencials de client",
                 "clientCredentialsNotValid": "Les credencials del client no són vàlides",
                 "forInformationRead": "Per a obtindre informació sobre com solucionar-ho, llegiu {url}.",
@@ -441,7 +441,7 @@
                 "handlers": {
                     "json": {
                         "failedToParseImportJson": "No s'ha pogut analitzar el fitxer JSON d'importació.",
-                        "invalidJsonFormat": "El format JSON no és vàlid; s'esperava «{db: [exportedData]}»",
+                        "invalidJsonFormat": "El format JSON no és vàlid; s'esperava `{db: [exportedData]}`",
                         "checkImportJsonIsValid": "comproveu que el fitxer d'importació siga un JSON vàlid.",
                         "apiDbImportContent": "Contingut de la importació de la Base de dades de l'API"
                     }
