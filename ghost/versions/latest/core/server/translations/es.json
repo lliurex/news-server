@@ -76,7 +76,7 @@
                 "noEmail": "no hay correo electrónico.",
                 "forgottenPasswordEmail": {
                     "error": "Sólo {rfa} intentos de restablecimiento de contraseña por correo electrónico cada {rfp} segundos.",
-                    "context": "Ha fallado el intento de restablecimiento de contraseña."
+                    "context": "Ha fallado el intento de restablecimiento de contraseña"
                 },
                 "forgottenPasswordIp": {
                     "error": "Sólo {rfa} intentos por dirección IP address cada {rfp} segundos.",
@@ -86,7 +86,7 @@
             "themehandler": {
                 "missingTheme": "El tema actualmente activo \"{theme}\" ha desaparecido.",
                 "invalidTheme": "El tema actualmente actvo \"{theme}\" no es válido.",
-                "themeHasErrors": "El tema actualmente activo  \"{theme}\" tiene errores pero continua funcionando.",
+                "themeHasErrors": "El tema actualmente activo \"{theme}\" tiene errores pero continua funcionando.",
                 "activateFailed": "No es posible activar el tema \"{theme}\"."
             },
             "redirects": {
@@ -142,7 +142,7 @@
                 "help": "Por favor asegurese que la configuración del Bookshelf de la base de datos es válida"
             },
             "deprecatedProperty": {
-                "error": "La propiedad de configuración [{propiedad}] ha quedado en desuso",
+                "error": "La propiedad de configuración [{propiedad}] ha quedado en desuso.",
                 "explanation": "Esto se eliminará en una versión futura, actualice su fichero config.js.",
                 "help": "Por favor comprueba {url} para un ejemplo más actualizado."
             },
@@ -398,7 +398,7 @@
                 "couldNotGetSize": "No es posible obtener las dimensiones del icono"
             },
             "users": {
-                "userNotFound": "Usuario no encontrado",
+                "userNotFound": "Usuario no encontrado.",
                 "cannotChangeOwnRole": "No puede cambiar su propio rol.",
                 "cannotChangeStatus": "No puede cambiar su propio estado.",
                 "cannotChangeOwnersRole": "No puede cambiar el rol del Propietario",
@@ -413,7 +413,7 @@
                 "noPermissionToCall": "No tiene permisos para {method} {docName}",
                 "noRootKeyProvided": "No se ha proporcionado la clave de root ('{docName}') .",
                 "invalidStructure": "No se ha proporcionado una estructura válida de objecto para: {key}",
-                "invalidIdProvided": "Invalid id provided."
+                "invalidIdProvided": "Se ha proporcionado un identificador invalido."
             },
             "invites": {
                 "inviteNotFound": "Invitación no encontrada.",
@@ -456,7 +456,7 @@
                 "EmailError": "¡Error al enviar el correo electrónico!",
                 "ThemeValidationError": "Error al validar el tema, no es posible {action}.",
                 "HostLimitError": "Error en el límite del Host, no es posible {action}.",
-                "DisabledFeatureError": "Error en la validación del tema, el  {{{helperName}}} de ayuda no esta disponible. No es posible {action}.",
+                "DisabledFeatureError": "Error en la validación del tema, el {{{helperName}}} de ayuda no esta disponible. No es posible {action}.",
                 "UpdateCollisionError": "¡El guardado ha fallado! Alguien más esta editando esta entrada."
             }
         },
@@ -469,7 +469,7 @@
                     "unableToFindOwner": "No es posible encontrar un propietarior"
                 },
                 "index": {
-                    "duplicateEntryFound": "Se ha encontrado una entrada duplicada. Multiple valores de  '{value}' encontrados para {offendingProperty}."
+                    "duplicateEntryFound": "Se ha encontrado una entrada duplicada. Multiple valores de '{value}' encontrados para {offendingProperty}."
                 },
                 "utils": {
                     "dataLinkedToUnknownUser": "Intento de importar información asociada a un identificador de usuario desconocido {userToMap}"
@@ -515,7 +515,7 @@
             },
             "mega": {
                 "requestFailed": {
-                    "error" : "El servicio de correo electrónico no pudo enviar un lote de correo electrónico."
+                    "error": "El servicio de correo electrónico no pudo enviar un lote de correo electrónico."
                 }
             }
         },
@@ -526,7 +526,7 @@
             "anErrorOccurred": "Se ha producido un error",
             "unknownErrorOccurred": "Se ha producido un error desconocido.",
             "unknownError": "Error desconocido",
-            "unknownApiError": "Error de  API desconocidor",
+            "unknownApiError": "Error de API desconocidor",
             "databaseIsReadOnly": "Su base de datos esta en modo de sólo lectura. Los usuarios pueden leer el sitio pero no pueden iniciar sesión y añadir entradas.",
             "checkDatabase": "Compruebe su archivo de base datos y asegúrese que el propietario y los permisos del archivo son correctos.",
             "notEnoughPermission": "No tiene permisos para ejecutar esta acción",
@@ -596,7 +596,7 @@
                 "valuesMustBeNumeric": "Valor no válido, comprueba que página, páginas, límite y total son números"
             },
             "plural": {
-                "valuesMustBeDefined": "Todos los valores deben definirse para vacío, singular y plural."
+                "valuesMustBeDefined": "Todos los valores deben definirse para vacío, singular y plural"
             },
             "price": {
                 "attrIsRequired": "Se requiere un atributo ej. \\{\\{price plan.amount\\}\\}",
@@ -650,7 +650,7 @@
                     "valueCannotBeBlank": "El valor en [{tableName}.{columnKey}] no puede estar en blanco.",
                     "valueMustBeBoolean": "El valor en [{tableName}.{columnKey}] debe ser true, false, 0 o 1.",
                     "valueExceedsMaxLength": "El valor en [{tableName}.{columnKey}] excede la longitud máxima de {maxlength} caracteres.",
-                    "valueIsNotInteger": "Value in [{tableName}.{columnKey}] is not an integer.",
+                    "valueIsNotInteger": "El valor en [{tableName}.{columnKey}] no es un numero entero.",
                     "themeCannotBeActivated": "{themeName} no puede ser activado porque actuálmente no esta instalado.",
                     "validationFailed": "Ha fallado la validación ({validationName}) para {key}",
                     "schemaValidationFailed": "Ha fallado la validación para '{key}'",
