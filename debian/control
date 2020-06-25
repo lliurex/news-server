@@ -1,0 +1,21 @@
+Source: news-server
+Section: admin
+Priority: extra
+Maintainer: LliureX Team <lliurex@gva.es>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: http://lliurex.net
+
+Package: ghost-cli
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: ghost-cli configuration
+ Install ghost-cli
+ 
+Package: ghost
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: ghost server
+ Install ghost server files
+ 
+ 
