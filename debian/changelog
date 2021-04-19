@@ -1,3 +1,9 @@
+news-server (0.1.1) bionic; urgency=medium
+
+  * Disable check to new versions
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 19 Apr 2021 17:14:07 +0200
+
 news-server (0.1) bionic; urgency=medium
 
   * Initial release.
