@@ -21,7 +21,9 @@ const crypto = require('crypto'),
     request = require('./lib/request'),
     ghostVersion = require('./lib/ghost-version'),
     internal = {context: {internal: true}},
-    allowedCheckEnvironments = ['development', 'production'];
+    /*allowedCheckEnvironments = ['development', 'production'];*/
+    allowedCheckEnvironments = ['development'];
+
 
 function nextCheckTimestamp() {
     var now = Math.round(new Date().getTime() / 1000);
